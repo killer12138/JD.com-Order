@@ -9,14 +9,15 @@ function MeituanOrder({ orderData }) {
 
   const handleExport = async () => {
     if (!pageRef.current) return;
-    // iPhone 14 Pro Max: 430 x 932 logical pixels
-    const canvas = await html2canvas(pageRef.current, {
+    const el = pageRef.current;
+    const canvas = await html2canvas(el, {
       scale: 3,
       useCORS: true,
       allowTaint: true,
-      width: 430,
-      windowWidth: 430,
-      scrollY: 0,
+      width: el.scrollWidth,
+      height: el.scrollHeight,
+      windowWidth: el.scrollWidth,
+      scrollY: -window.scrollY,
       scrollX: 0,
     });
     const link = document.createElement('a');

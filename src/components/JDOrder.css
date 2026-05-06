@@ -1,5 +1,40 @@
 /* 京东订单页面样式 */
+.jd-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #e8e8e8;
+  min-height: 100vh;
+  padding: 12px 0 24px;
+}
+
+.jd-export-bar {
+  width: 430px;
+  max-width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  padding: 0 0 10px;
+}
+
+.jd-export-btn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 16px;
+  background: #e1251b;
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  font-size: 14px;
+  cursor: pointer;
+  font-family: -apple-system, BlinkMacSystemFont, 'PingFang SC', sans-serif;
+}
+
+.jd-export-btn:active { opacity: 0.85; }
+
 .jd-order {
+  width: 430px;
+  max-width: 100%;
   background-color: #f5f5f5;
   padding-bottom: 20px;
 }
