@@ -1,0 +1,165 @@
+/* 京东订单页面样式 */
+.jd-order {
+  background-color: #f5f5f5;
+  padding-bottom: 20px;
+}
+
+/* 状态描述区域 */
+.jd-order .status-section {
+  background-color: #fff;
+  padding: 16px;
+  margin-bottom: 8px;
+}
+
+.jd-order .status-desc {
+  font-size: 14px;
+  color: #666;
+  line-height: 1.5;
+}
+
+/* 操作按钮网格 */
+.jd-order .action-grid {
+  background-color: #fff;
+  padding: 16px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  margin-bottom: 8px;
+}
+
+.jd-order .action-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.jd-order .action-icon {
+  width: 40px;
+  height: 40px;
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.jd-order .action-icon.primary {
+  color: #ff6b35;
+}
+
+.jd-order .action-text {
+  font-size: 12px;
+  color: #666;
+}
+
+.jd-order .action-text.primary {
+  color: #ff6b35;
+}
+
+/* 商家信息区域 */
+.jd-order .restaurant-section {
+  background-color: #fff;
+  padding: 16px;
+  margin-bottom: 8px;
+}
+
+.jd-order .restaurant-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.jd-order .restaurant-name {
+  margin-left: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  flex: 1;
+  color: #191919;
+}
+
+.jd-order .arrow {
+  color: #ccc;
+  font-size: 18px;
+}
+
+/* 商品信息 */
+.jd-order .item-info {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 16px;
+}
+
+.jd-order .item-image {
+  width: 60px;
+  height: 60px;
+  margin-right: 12px;
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: #f5f5f5;
+}
+
+.jd-order .item-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.jd-order .item-details {
+  flex: 1;
+}
+
+.jd-order .item-details h4 {
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 4px;
+  color: #333;
+}
+
+.jd-order .item-specs {
+  font-size: 12px;
+  color: #666;
+  margin-bottom: 4px;
+}
+
+.jd-order .item-note {
+  font-size: 12px;
+  color: #9c4e00;
+}
+
+.jd-order .item-price {
+  text-align: right;
+}
+
+.jd-order .current-price {
+  font-size: 14px;
+  color: #ff6b35;
+  font-weight: 500;
+  display: block;
+}
+
+.jd-order .original-price {
+  font-size: 12px;
+  color: #999;
+  text-decoration: line-through;
+}
+
+.jd-order .order-summary {
+  text-align: right;
+}
+
+/* 响应式设计 */
+@media (max-width: 375px) {
+  .jd-order .action-grid {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+  }
+
+  .jd-order .action-icon {
+    width: 36px;
+    height: 36px;
+  }
+
+  .jd-order .action-text {
+    font-size: 11px;
+  }
+}
