@@ -14,10 +14,12 @@ function JDOrder({ orderData }) {
       scale: 4,
       useCORS: true,
       allowTaint: true,
-      width: el.scrollWidth,
-      height: el.scrollHeight,
+      width: el.scrollWidth - 40,
+      height: el.scrollHeight - 20,
       windowWidth: el.scrollWidth,
-      scrollY: -5000
+      windowHeight: el.scrollHeight,
+      scrollX: 0,
+      scrollY: 0
     });
     const link = document.createElement('a');
     link.download = `jd-order-${Date.now()}.png`;
